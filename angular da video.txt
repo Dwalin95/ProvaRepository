@@ -1,0 +1,31 @@
+linguaggio client, single page application, invece di creare molte pagine html ecc.. ne creiamo una sola, con script avanzati, tutto il body girerà su JS, noi anche se utiliziamo uno / per reinderizzare su un'altra pagina invede andrà a cambiare il template nell'index html. quindi rimarrà sempre sulla single page application.
+
+
+Single page application -- classroom -- google -- 
+angular è struttutrato su mvc
+
+approot richiama codice file
+
+assets possiamo metterci immagini, file css e anche js
+
+
+COMPONENTI ANGULAR:
+
+app.component--  componente home, nel file htm ci mettiamo 
+
+
+Componente:
+-import{Component, OnInit} from @Angular/Core, con i file principali
+@Compomntent({
+- selector:'app-home' --- nome tag html con cui lo richiamiamo
+- templateUrl: './home.component.html' --- da dove deve prendere l'html
+- styleUrls:['./home.component.css] --- uno o più url di file css [è un array]
+})
+
+export class HomeComponent implements OnInit{
+
+constructor(){}
+ngOnInit():void{}
+
+
+per assegnare i component al template bisogna richiamarlo sull'app component

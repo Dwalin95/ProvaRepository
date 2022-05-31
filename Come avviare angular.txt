@@ -1,0 +1,8 @@
+AVVIARE ANGULAR
+
+1) nmp install -g angular-cli
+2) (se serve) ng new nomeprogetto
+3) cd cartellaprogetto
+4) npm install
+5) ng serve
+6) localhost:4200

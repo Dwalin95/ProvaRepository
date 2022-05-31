@@ -1,0 +1,35 @@
+Componenti -- two way bindings 
+
+1 Sincronizzo il modello con ngModel, nel login component.html
+nel file.ts andiamo a chiamare la parte di bkend
+
+nella parte di bkend gli passiamo un oggetto json e gli argomneti, in questo caso una funzione che riceve quando va bene e una funzione che riceve quando qualcosa è andato storto
+
+il bk risponde con stringhe json 
+
+@injectable --> questa funzione sarà inniettabile nel costruttore di un altro oggetto, poi si crea la logica 
+
+nella parte app pmodule vado a definire il servizio, poi lo vado ad inniettare nel componente
+
+nel costruttore lo utilizzo con la sintassi loginService ma negli altri medoti del componente devo usare il this, per disambiguare il riferimento e per richiamarlo da fuori il costruttore
+
+
+var viene utilizata nelle funzioni 
+
+
+con il subscribe((data:any) => { var response = data;
+console.log(response);
+if(response.sucsess){
+	callbackOnSucsess(response.data);
+} else{
+callbackOnSucsess(response.error,response.error_code);
+}
+}) ;
+
+
+
+
+{{{git}}}
+
+branch: dei rami dello stesso applicativo.
+git clone --> viene copiato il proigetto in localeper poi fare le operazioni
